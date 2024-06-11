@@ -1,0 +1,447 @@
+:root {
+    --green: #DEEFE7;
+    --darkgreen : #003322;
+    --lightgreen : #D0F288;
+    --dkred : #C70007;
+    --dkblue: #002333;
+    --black : #1B2430; 
+    --dkgray : #0C6F5C; 
+    --smblue : #159A9C; 
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --gray: #B4BEC9;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+    --lightblue : #C5FFF8 ; 
+    --light-white: rgba(255,255,255,0.9);
+    /* color pallete 2*/
+    --darky : #191919; 
+    --redish : #750e21e8 ; 
+    --orangy : #E3651D;
+    --greeny : #BED754; 
+
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  padding : 0 ; 
+  margin :  0;
+  font-family : var(--sans); 
+  background-color : var(--white);
+  color : var(--darky); 
+  font-size : var(--font-size);
+}
+h1,h2,h3 {
+  margin : 0 ; 
+}
+#intro {
+  padding-bottom : 4rem 1rem 10rem 1rem ;  
+  margin: 3rem auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column-reverse;
+  
+  
+  /* align-items: center; */
+}
+#intro img {
+  width: 50%;
+ 
+  margin-bottom: -8px;
+  align-self: center;
+  border-radius: 50%;
+
+
+}
+.description-container {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  
+}
+
+#intro p {
+  color: #CA5C70;
+  font-size : 1.2rem ; 
+  line-height : 1.6;
+  padding: 0 .5rem;
+  margin-bottom: 0;
+}
+#intro .name {
+  font-family : var(--mono); 
+  text-align: center;
+  margin-top: 1rem;
+}
+#intro h2 {
+  font-size : 1.5rem ; 
+  font-weight : larger;
+  letter-spacing : -1px;
+  color : var(--darky);
+  padding: 0 .5rem;
+  text-align: center;
+
+}
+iframe {
+  padding: 2rem;
+  overflow: hidden;
+}
+.name span {
+  font-family : var(--sans); 
+  font-size : 2.5rem ; 
+  color: var(--redish); 
+  display : block ; 
+  
+}
+/* Tech stack  */
+.tech-stack {
+  background-color:#191919 ;
+  text-align: center ;
+
+}
+.tech-stack h1 {
+  color : white ; 
+  font-size: 1.4rem ;
+  padding-top: .5rem;
+}
+.tech-stack img{
+  width: 80%;
+  
+}
+.acheivements {
+  background-color: var(--darky);
+  padding: 1rem;
+ 
+}
+.acheivements h2{
+  color: var(--white);
+  text-align: center;
+  font-size: 1.4rem;
+}
+.carousel-control-next-icon {
+  color : black;
+} 
+.carousel-control-next-icon {
+  color : black;
+} 
+.sliding-image{
+  margin:  auto;
+  padding-top: 1rem;
+  height: 700px;
+}
+.demos > button {
+  background-color: var(--darky);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.demos > button > a {
+  color: #CA5C70;
+  letter-spacing: 0.1rem;
+}
+
+
+/* projects section */
+.section-dkgreen-projects {
+  background-color : var(--redish);
+  color : var(--black);
+}
+/* Contact me section  */
+.mail {
+  background-color : rgba(255,255,255) ;
+  margin : 0 auto ; 
+  padding : 5px 8px ; 
+  border : 2px solid var(--dkgray); 
+  display : inline-block ; 
+  line-height : 1.5; 
+  color : var(--dkgray); 
+  font-weight : larger; 
+  text-decoration : underline ; 
+  
+  
+}
+
+.section-dkgreen {
+  background-color : var(--redish);
+  color : var(--darky);
+}
+#projects {
+  padding : 4rem 1rem; 
+}
+#projects h2 {
+  font-size : 2.5rem ; 
+  margin-bottom : calc(2.5rem * 1.5); 
+}
+#projects h4 {
+  color : var(--white); 
+  font-weight : bolder ; 
+  font-size : 1.5rem ; 
+  font-family : var(--mono);
+  margin : 0 ;
+}
+.dkblue-box {
+  background-color : var(--darky);
+  padding : 2rem 1rem ; 
+  border-radius : 10px; 
+  color : var(--white);
+  font-size : 1rem ; 
+  line-height : 1.5; 
+
+  
+}
+#projects ul {
+  list-style-type : none ; 
+  padding : 0; 
+  margin : 0 ; 
+  display : flex ; 
+  flex-flow : row-wrap ; 
+  justify-content : flex-start ; 
+  gap : 1rem ; 
+  font-size : 1rem ; 
+}
+#projects img {
+  margin : 2rem 0 4rem 0 ; 
+  border-left : 1px solid var(--darky);
+  border-top : 1px solid var(--darky);
+  border-radius:25px; 
+  padding : 1rem ;
+  width: 100%; 
+  height: 80%;
+  
+}
+
+.gradient{
+  background: rgb(248,95,0);
+background: linear-gradient(90deg, rgba(248,95,0,1) 0%, rgba(192,5,5,1) 85%);
+  height: 2px;
+}
+/* nav section */
+nav {
+    font-family : var(--mono); 
+    font-size : 80% ; 
+    padding : 1rem ; 
+    padding-left: 0;
+   
+  }
+ 
+  nav h1 a {
+    font-family : var(--sans); 
+    color: var(--redish);
+    /* position: relative; */
+    bottom: .3rem;
+    
+  }
+  nav ul {
+    list-style-type : none ; 
+    padding : 0 ; 
+    margin : 0; 
+    display : flex ; 
+    flex-flow : row wrap; 
+    justify-content : center ; 
+    align-items : center ; 
+    gap: 2rem ; 
+    
+  }
+  nav li:first-child {
+    flex-basis : 100% ; 
+    text-align : center ; 
+    
+  }
+  nav a {
+    color : var(--redish); 
+    text-decoration : none; 
+    display : block ; 
+    font-weight: bolder;
+  }
+ 
+  nav [class*="fa-"]{
+    font-size : 170% ; 
+    color : var(--darky); 
+  }
+  nav [class*="logo"]{
+    color: var(--redish) ;
+   
+  }
+ 
+  nav [class*="fa-"]:hover{
+    color : var(--darky); 
+  }
+  nav a:hover {
+    color: var(--darky);
+  }
+
+  .button {
+    background-color : var(--redish) ;
+    padding : 0.5rem ;
+    border-radius : 5px ; 
+    color: var(--white);
+     
+  }
+  .button:hover{
+    background-color : var(--darky); 
+    color: var(--redish);
+    border-bottom: 1.5px solid var(--dkblue);
+    border-right: 1.5px solid var(--dkblue);
+  }
+  
+  
+  footer {
+    text-align : center ; 
+    background-color: var(--white);
+   
+  }
+  footer ul {
+    display : flex ; 
+    list-style : none ; 
+    gap : 3rem ; 
+    justify-content : center ; 
+    font-size : 3rem ; 
+    padding : 0 ; 
+    margin : 2rem 0 ; 
+  }
+  footer span {
+    color : var(--redish)
+  }
+  footer h2 {
+    color: var(--redish);
+  }
+  footer p {
+    color: var(--darky);
+
+  }
+    /* Desktop design */
+    
+    @media(min-width : 800px){
+      article {
+        display : grid ; 
+        grid-template-columns : repeat(10,1fr) ; 
+        gap : 1rem ; 
+      }
+      #projects {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+      #projects img {
+        width: 100%;
+        grid-column : 1/6 ; 
+        grid-row : 1/2 ; 
+      }
+      .text {
+        grid-column : 5/11 ;
+        grid-row : 1/2 ; 
+        order : 2 ; 
+        text-align : right  ; 
+        
+      }
+      
+      #projects .reverse .text {
+        grid-column: 1/7;
+        order: 2;
+        text-align: left;
+      }
+      #projects .reverse img {
+        grid-column: 6/11;
+        grid-row: 1/2;
+      }
+      #projects .reverse ul {
+        justify-content: left;
+      
+      }
+      
+      
+    }
+  
+    @media(min-width : 850px){
+      nav {
+        max-width : 1200px;
+        margin: 0 auto;
+      }
+      nav li:first-child{
+          flex-basis: auto;
+          text-align: left;
+          margin-right: auto ; 
+      
+      }
+      #intro {
+       
+        margin: 3rem auto;
+        max-width: 1200px;
+        flex-direction: row;
+        /* align-items: center; */
+      }
+      #intro img {
+        width: 42%;
+        margin-left : auto;
+        align-self: normal;
+        
+      }
+      #intro p {
+        font-size: 1.7rem;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 1.2rem;
+        line-height: 1.5;
+        
+      }
+      /* #intro div{
+        align-self: center;
+      } */
+      #intro .name {
+        font-family : var(--mono); 
+        margin-top: 2rem;
+        text-align: left;
+      }
+      #intro h2 {
+        font-size : 2rem ; 
+        padding: 0 ;
+        text-align: left;
+   
+      }
+      .name span {
+        font-size : 4rem ; 
+        
+      }
+
+      #projects ul {
+        justify-content : flex-end ; 
+      }
+      .tech-stack img{
+        width: 50%;
+      }
+      .description-container {
+        text-align: left;
+        padding-left: 0;
+   
+        
+      }
+
+      
+      
+      
+    }
+    
+  /* @media (min-width: 850px) {
+      nav {
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+      nav li:first-child {
+          flex-basis: auto;
+          text-align: left;
+          margin-right: auto;
+      }
+   
+    
+  } */
