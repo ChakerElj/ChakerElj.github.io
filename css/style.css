@@ -73,7 +73,7 @@ h1,h2,h3 {
 
 #intro p {
   color: #CA5C70;
-  font-size : 1.2rem ; 
+  font-size : 1rem ; 
   line-height : 1.6;
   padding: 0 .5rem;
   margin-bottom: 0;
@@ -181,7 +181,7 @@ iframe {
   padding : 4rem 1rem; 
 }
 #projects h2 {
-  font-size : 2.5rem ; 
+  font-size : 1.5rem ; 
   margin-bottom : calc(2.5rem * 1.5); 
 }
 #projects h4 {
@@ -338,6 +338,9 @@ nav {
         grid-column : 1/6 ; 
         grid-row : 1/2 ; 
       }
+      #projects h2 {
+        font-size: 2.5rem;
+      }
       .text {
         grid-column : 5/11 ;
         grid-row : 1/2 ; 
@@ -388,7 +391,7 @@ nav {
         
       }
       #intro p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding: 0;
         margin-bottom: 0;
         margin-top: 1.2rem;
