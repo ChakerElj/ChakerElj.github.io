@@ -126,7 +126,7 @@ iframe {
   gap: 1rem;
  
 }
-.carousel-inner {
+.carousel-custom {
 
 
   width : 100%;
@@ -378,7 +378,7 @@ nav {
         justify-content: left;
       
       }
-      .carousel-inner {
+      .carousel-custom {
         padding: 1rem;
         margin : 0 auto ;
         width : 60%;
